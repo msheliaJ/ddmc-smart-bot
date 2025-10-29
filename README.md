@@ -35,7 +35,7 @@ This repository contains weekly technical deliverables for **EECE 72030** focuse
 
 ## Local Workflow
 
-> Replace `msheliaJ/CSE-Project-3` with your actual GitHub path if different.
+
 
 1) **Clone once**
 ```bash
@@ -63,15 +63,13 @@ git checkout main
 ```
 
 3) **Add weekly deliverables to each branch**  
-Example for **Assignment 5** (`phaseI_demo`):
+
 ```bash
 git checkout phaseI_demo
 
 mkdir -p Week05_PhaseI_Demo
 # Copy your files into this folder, e.g.:
 #   EECE72030_Assignment_05.pdf
-#   /code (your .c files)
-#   /docs (wiring diagrams, images)
 #   presentation.pptx
 #   report.pdf
 git add Week05_PhaseI_Demo
@@ -79,23 +77,20 @@ git commit -m "Week 5: Phase I demo – code, report, slides, wiring & README"
 git push
 ```
 
-Repeat similarly for other branches:
+
 - `Week01_Setup` (Assignment 1)
 - `Week02_PWM_LED` (Assignment 2)
 - `Week03_PWM_SingleMotor` (Assignment 3)
 - `Week04_PWM_DualMotor` (Assignment 4)
 
-4) **Keep `main` clean**  
-Create/update only this top-level README on `main`. Don’t commit weekly code to `main`.
 
----
 
 ## Repository Structure (per branch)
 
 ```
 <branch-root>/
 ├─ Week0X_<Label>/
-│  ├─ code/                 # .c files (with comments & pin maps)
+│  ├─ code/                 # .c files 
 │  ├─ docs/                 # wiring diagrams, oscilloscope images, notes
 │  ├─ presentation/         # slides (PPTX/PDF)
 │  ├─ report/               # PDF report (where applicable)
@@ -108,7 +103,7 @@ Create/update only this top-level README on `main`. Don’t commit weekly code t
 ## Build & Run (typical)
 
 ```bash
-# Example (adjust file names & pins)
+
 gcc -Wall -O2 -lwiringPi -o motor motor.c
 sudo ./motor
 ```

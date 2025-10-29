@@ -68,7 +68,7 @@ git checkout main
 git checkout phaseI_demo
 
 mkdir -p Week05_PhaseI_Demo
-# Copy your files into this folder, e.g.:
+
 #   EECE72030_Assignment_05.pdf
 #   presentation.pptx
 #   report.pdf

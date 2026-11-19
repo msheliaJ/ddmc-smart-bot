@@ -1,0 +1,6 @@
+robot
+*.o
+distance_log/
+robot_photos/
+.DS_Store
+.vscode/
